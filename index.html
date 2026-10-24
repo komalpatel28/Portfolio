@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Komal Patel | Frontend Developer</title>
+  <meta name="description" content="Komal Patel is an entry-level Frontend Developer who builds clean, responsive web interfaces with HTML, CSS and JavaScript." />
+  <meta property="og:title" content="Komal Patel | Frontend Developer" />
+  <meta property="og:description" content="Portfolio of Komal Patel: a job tracker, a weather dashboard and a resume builder, all built with HTML, CSS and JavaScript." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236366f1'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo" aria-label="Komal Patel, home">Komal</a>
+
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#regions">Target regions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-btn" class="icon-btn" aria-label="Switch to light theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </button>
+        <button id="menu-btn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <p class="pill"><span class="dot"></span> Open to frontend roles</p>
+        <h1>Hi, I'm <span class="grad">Komal Patel</span></h1>
+        <p class="role">Entry-level Frontend Developer based in South Korea</p>
+        <p class="lead">I build clean, responsive web interfaces with HTML, CSS and JavaScript. Below are three projects I built from scratch, each with a live demo and source code.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View my projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <ul class="hero-links" aria-label="Profiles">
+          <li><a href="https://github.com/komalpatel28" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/komal-patel-2398a2437/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:komalpatel0728@gmail.com">komalpatel0728@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div>
+          <h2 class="reveal">About me</h2>
+          <p class="reveal">I am a frontend developer at the start of my career. I enjoy turning an idea into something people can click, type into and use. I learn by building, so every project here solves a real problem I had myself, from tracking job applications to preparing resumes for different countries.</p>
+          <p class="reveal">I care about clean code, readable layouts, accessibility and pages that work on a phone as well as on a laptop.</p>
+        </div>
+        <dl class="facts reveal">
+          <div><dt>Based in</dt><dd>South Korea</dd></div>
+          <div><dt>Focus</dt><dd>Frontend development</dd></div>
+          <div><dt>Open to</dt><dd>Canada, Switzerland, Gulf, South Korea, India</dd></div>
+          <div><dt>Contact</dt><dd>komalpatel0728@gmail.com</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section alt" id="projects">
+      <div class="wrap">
+        <h2 class="reveal">Projects</h2>
+        <p class="sub reveal">Built with plain HTML, CSS and JavaScript. Open the live demo or read the code.</p>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="reveal">Skills</h2>
+        <p class="sub reveal">What I use in my projects, and what I am learning next.</p>
+        <div class="skill-groups">
+          <div class="skill-box reveal">
+            <h3>Used in my projects</h3>
+            <ul class="chips" id="skills-used"></ul>
+          </div>
+          <div class="skill-box reveal">
+            <h3>Learning next</h3>
+            <ul class="chips chips-soft" id="skills-next"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regions -->
+    <section class="section alt" id="regions">
+      <div class="wrap">
+        <h2 class="reveal">Where I am applying</h2>
+        <p class="sub reveal">Different countries look for different things. Pick a region to see how I tailor my application.</p>
+        <div class="tabs reveal" role="tablist" aria-label="Target regions" id="region-tabs"></div>
+        <div class="region-panel reveal" id="region-panel" role="tabpanel" tabindex="0"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap contact">
+        <div>
+          <h2 class="reveal">Let's work together</h2>
+          <p class="reveal">I am looking for an entry-level frontend role. If you have an opening or want to talk about my work, send me a message.</p>
+          <p class="reveal"><a class="mail" href="mailto:komalpatel0728@gmail.com">komalpatel0728@gmail.com</a></p>
+
+          <div id="resume-box" class="resume-box reveal" hidden>
+            <h3>Download my resume</h3>
+            <div id="resume-links" class="resume-links"></div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="form reveal" novalidate>
+          <label for="cf-name">Your name</label>
+          <input id="cf-name" autocomplete="name" required />
+          <label for="cf-email">Your email</label>
+          <input id="cf-email" type="email" autocomplete="email" required />
+          <label for="cf-subject">Subject</label>
+          <input id="cf-subject" placeholder="Frontend role in Canada" />
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send message</button>
+          <p id="cf-status" class="status" role="status" aria-live="polite">This opens your email app with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Komal Patel. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
