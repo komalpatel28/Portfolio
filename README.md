@@ -3,7 +3,7 @@
 Welcome to the source code repository of my personal portfolio website! I am an entry-level Frontend Developer based in South Korea, specializing in building clean, responsive web interfaces with HTML, CSS, and JavaScript[cite: 3].
 
 ## 🔗 Live Demo
-- **Portfolio Website:** [https://komalpatel28.github.io/](https://komalpatel28.github.io/)
+- **Portfolio Website:** https://komalpatel28.github.io/Portfolio/
 
 ## ✨ Featured Projects
 1. **Job Application Tracker:** A Kanban board web app to track job applications across countries with search, filters, and `localStorage` persistence[cite: 2].
